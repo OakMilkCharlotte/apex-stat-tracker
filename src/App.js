@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React, {useState} from "react";
-import database from './firebase';
+import { database } from './firebase';
 import { ref, set } from "firebase/database";
 
 function SimpleForm() {
