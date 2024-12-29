@@ -8,6 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload. How about I edit your mom's bank account fatty =OwO=
+          \n also your face is mega uggo xDEE
         </p>
         <a
           className="App-link"
