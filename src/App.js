@@ -60,4 +60,4 @@ function SimpleForm() {
   );
 }
 
-export default App;
+export default SimpleForm;
