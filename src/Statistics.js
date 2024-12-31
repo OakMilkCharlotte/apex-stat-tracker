@@ -1,6 +1,6 @@
 import React from "react";
 
-function Tab2() {
+function Statistics() {
   return (
     <div>
       <h1>Welcome to Tab 2</h1>
@@ -9,4 +9,4 @@ function Tab2() {
   );
 }
 
-export default Tab2;
+export default Statistics;

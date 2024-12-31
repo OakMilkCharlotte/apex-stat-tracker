@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(247, 132, 220);
 }
 
 .App-link {
@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+/* body {
+  background-color: #575456;
+} */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #66588b, #8e4a6f 60%, #716068 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+

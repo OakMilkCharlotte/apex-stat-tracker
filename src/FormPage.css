@@ -1,0 +1,200 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .form-box {
+    background-color: #3d3d3d;
+    color: #fcaee9; /* Changed to your desired text color */
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fcaee9; /* Ensure label text uses the desired color */
+  }
+  
+  input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    background: rgb(103, 98, 98); /* Background for the slider track */
+    height: 8px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  input[type="range"]::-moz-range-progress {
+    background-color: #fcaee9; 
+    border: none;
+    height: 8px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #ff4dcf; /* Thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #fcaee9; /* Thumb color for Firefox */
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+  }
+
+  .reversed-range {
+    direction: rtl; /* Reverses the slider visually */
+  }
+
+
+  /* Custom styles for placement slider */
+input[type="range"].custom-placement-slider {
+    background: #fcaee9; /* Custom track background */
+  }
+  
+  input[type="range"].custom-placement-slider::-moz-range-progress {
+    background-color: rgb(103, 98, 98); /* Custom progress color */
+  }
+  
+  input[type="range"].custom-placement-slider::-webkit-slider-thumb {
+    background: #fcaee9; /* Custom thumb color */
+  }
+  
+  input[type="range"].custom-placement-slider::-moz-range-thumb {
+    background: #fcaee9; /* Custom thumb color for Firefox */
+  }
+  
+  
+  textarea {
+    width: 100%;
+    height: 60px;
+    color: #333333;
+    background-color: lightgray; /* Light gray background */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 60px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 5px;
+    color: #333333;
+    background-color: lightgray; /* Light gray background */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .submit-button.enabled {
+    background-color: #c06fac;
+    cursor: pointer;
+  }
+  
+  .submit-button.disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  h2 {
+    color: #fcaee9;
+  }
+  
+
+
+
+
+
+
+
+
+
+/* .form-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .form-box {
+    background-color: #a86c99;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 60px;
+    color: #333333;
+  }
+  
+  select {
+    width: 100%;
+    padding: 5px;
+    color: #333333;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .submit-button.enabled {
+    background-color: green;
+    cursor: pointer;
+  }
+  
+  .submit-button.disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+
+  h2 {
+    color: #333333;
+  } */
