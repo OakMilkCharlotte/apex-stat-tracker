@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './FormPage.css';
+import { database } from './firebase'; // Adjust path to your Firebase setup
+import { ref, set } from 'firebase/database';
 
 const legends = ["Legend1", "Legend2", "Legend3", /* Add more options here */];
 
@@ -45,6 +47,21 @@ const FormPage = () => {
     );
   };
 
+
+  const writeDataToFirebase = (formData) => {
+    const userId = new Date().getTime(); // Use timestamp as unique ID
+    set(ref(database, `matchData/${userId}`), formData)
+      .then(() => {
+        console.log('Data written successfully!');
+        alert('Form submitted successfully!');
+      })
+      .catch((error) => {
+        console.error('Error writing data:', error);
+        alert('An error occurred while submitting the form.');
+      });
+  };
+
+
   const handleSubmit = () => {
     if (!Number.isInteger(placement) || !Number.isInteger(teamKP) || isNaN(parseInt(rp))) {
       setError('Please ensure all integer fields have valid integer values.');
@@ -65,6 +82,9 @@ const FormPage = () => {
       legend3,
       date: new Date().toISOString(),
     };
+
+    // Write to Firebase
+    writeDataToFirebase(formData);
 
     console.log('Form Submitted:', formData);
 
