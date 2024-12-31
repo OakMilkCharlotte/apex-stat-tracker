@@ -11,6 +11,7 @@ const FormPage = () => {
   const [teamKP, setTeamKP] = useState(0);
   const [rp, setRP] = useState(0);
   const [reason, setReason] = useState('');
+  const [landing, setLanding] = useState('');
 
   // Group 2 state
   const [split, setSplit] = useState('Select');
@@ -41,7 +42,7 @@ const FormPage = () => {
 
   const isFormValid = () => {
     return (
-      placement && teamKP !== null && rp !== null && reason.trim() &&
+      placement && teamKP !== null && rp !== null && reason.trim() && landing.trim() &&
       split !== 'Select' && rank !== 'Select' && map !== 'Select' &&
       legend1 !== 'Select' && legend2 !== 'Select' && legend3 !== 'Select'
     );
@@ -74,6 +75,7 @@ const FormPage = () => {
       teamKP,
       rp,
       reason,
+      landing,
       split,
       rank,
       map,
@@ -93,6 +95,7 @@ const FormPage = () => {
     setTeamKP(0);
     setRP(0);
     setReason('');
+    setLanding('');
   };
 
   return (
@@ -147,6 +150,23 @@ const FormPage = () => {
           <textarea
             value={reason}
             onChange={(e) => setReason(e.target.value)}
+          />
+        </div>
+
+        {/* Landing */}
+        <div className="form-group">
+          <label><strong>Landing Site</strong></label>
+          <input
+            type="text"
+            placeholder="Enter landing site"
+            style={{
+              padding: '5px',
+              fontSize: '14px',
+              border: '1px solid #ccc',
+              borderRadius: '4px',
+              width: '150px',
+              background: 'lightgray',
+            }}
           />
         </div>
 
