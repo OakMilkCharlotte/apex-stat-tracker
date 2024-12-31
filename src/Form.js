@@ -159,6 +159,8 @@ const FormPage = () => {
           <input
             type="text"
             placeholder="Enter landing site"
+            value={landing}
+            onChange={(e) => setLanding(e.target.value)} // Update state on input change
             style={{
               padding: '5px',
               fontSize: '14px',
