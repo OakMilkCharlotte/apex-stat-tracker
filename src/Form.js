@@ -42,7 +42,7 @@ const FormPage = () => {
 
   const isFormValid = () => {
     return (
-      placement && teamKP !== null && rp !== null && reason.trim() && landing.trim() &&
+      placement && teamKP !== null && rp !== null && reason.trim() &&
       split !== 'Select' && rank !== 'Select' && map !== 'Select' &&
       legend1 !== 'Select' && legend2 !== 'Select' && legend3 !== 'Select'
     );
