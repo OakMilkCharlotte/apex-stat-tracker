@@ -1,6 +1,8 @@
 import React from "react";
 
 function CurrentSession({ data }) {
+    console.log("Data received by CurrentSession:", data);
+
   if (!data || data.length === 0) {
     return <div>No data available</div>;
   }
@@ -19,7 +21,7 @@ function CurrentSession({ data }) {
   return (
     <div className="form-container">
       <div className="form-box">
-        <h2>Current Session Statistics</h2>
+        <h2>Current Split Statistics</h2>
         <table>
           <tbody>
             <tr>
