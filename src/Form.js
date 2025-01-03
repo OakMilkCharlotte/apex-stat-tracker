@@ -82,7 +82,7 @@ const FormPage = () => {
       legend1,
       legend2,
       legend3,
-      date: new Date().toISOString(),
+      date: new Date().toLocaleString('en-US', { timeZone: 'America/Denver' }), // Adjust to your timezone
     };
 
     // Write to Firebase
