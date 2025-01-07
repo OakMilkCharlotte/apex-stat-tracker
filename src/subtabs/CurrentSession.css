@@ -1,43 +1,55 @@
-.current-session-container {
+.form-container {
+    display: flex;
+    flex-direction: column; /* Stack boxes vertically */
+    gap: 1rem; /* Add spacing between the boxes */
+    align-items: center; /* Center-align content */
+    width: 100%;
+  }
+  
+  .form-box-graph {
+    width: 80%; /* Set a consistent width */
+    border: 0px solid #ccc; /* Add a border for visual separation */
+    border-radius: 15px; /* Round corners */
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #3d3d3d;
+    color: #fcaee9; /* Changed to your desired text color */
+  }
+  
+  .small-box {
+    height: 150px; /* Make the average data box shorter */
+    font-size: 14px; /* Adjust font size */
+  }
+  
+  .large-box {
+    height: 300px; /* Make the graph box twice as tall */
+    font-size: 16px; /* Adjust font size for the graph */
     display: flex;
     justify-content: center;
-    padding: 10px;
+    align-items: center;
   }
   
-  .current-session-box {
-    background-color: #3d3d3d;
-    color: #fcaee9; /* Text color */
-    border-radius: 10px;
-    padding: 20px;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto; /* Center the box */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  h2 {
+    font-size: 1.5rem; /* Slightly larger header font size */
+    margin-bottom: 0.5rem;
   }
   
-  .current-session-box h2 {
-    color: #fcaee9; /* Header color */
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .current-session-table {
+  table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 1.1rem;
   }
   
-  .current-session-table td {
-    padding: 10px;
-    color: #fcaee9;
+  td {
+    padding: 0.5rem;
+    font-size: 1rem;
   }
   
-  .current-session-table td:first-child {
+  td:first-child {
+    font-weight: bold;
     text-align: left;
   }
   
-  .current-session-table td:last-child {
+  td:last-child {
     text-align: right;
-    font-weight: bold;
   }
   

@@ -1,6 +1,6 @@
 import React from "react";
 import CurrentSessionGraph from "./CurrentSessionGraph";
-import './CurrentSession.css';
+import './CurrentSplit.css';
 
 function CurrentSplit({ data }) {
   console.log("Data received by CurrentSplit:", data);
@@ -59,31 +59,26 @@ function CurrentSplit({ data }) {
 
   return (
     <div className="form-container">
-
-      {/* Box for recent day data */}
+      {/* Box for all data */}
       <div className="form-box">
-        <h2>Most Recent Day Statistics</h2>
+        <h2>Current Split Statistics</h2>
         <table>
           <tbody>
             <tr>
-              <td>Total RP:</td>
-              <td>{recentTotalRP}</td>
-            </tr>
-            <tr>
               <td>Average RP:</td>
-              <td>{recentAvgRP}</td>
+              <td>{avgRP}</td>
             </tr>
             <tr>
               <td>Average KP:</td>
-              <td>{recentAvgKP}</td>
+              <td>{avgKP}</td>
             </tr>
             <tr>
               <td>Average Placement:</td>
-              <td>{recentAvgPlacement}</td>
+              <td>{avgPlacement}</td>
             </tr>
             <tr>
               <td>Number of Wins:</td>
-              <td>{recentNumWins}</td>
+              <td>{numWins}</td>
             </tr>
           </tbody>
         </table>
@@ -91,7 +86,7 @@ function CurrentSplit({ data }) {
 
       <div className="form-box-graph">
         <h2>Graphical Overview</h2>
-        <CurrentSessionGraph data={recentDayData} />
+        <CurrentSessionGraph data={data} />
       </div>
 
 
